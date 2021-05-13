@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "y0Hf3bBClr1snGpgR7bPn+JisM8H/ys9L+R3fU974F2/tPnj04FW+AiaRCn7dGPBnX15iLtxr90WPrYgmKHvCw==",
+  "success": true,
+  "projectFilePath": "C:\\WorkSpace\\Cervical Cancer Prevention Programme\\NexGenScreening.Domain\\NexGenScreening.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hai\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\hai\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
