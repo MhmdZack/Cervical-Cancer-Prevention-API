@@ -25,52 +25,9 @@ namespace NexGenScreening.Infrastructure.Persistence
             var connectionString = string.Empty;
             var NHConfiguration = new Configuration();
 
-            if (configuration.GetValue<string>("DBProvider").ToLower().Equals("mssql"))
-            {
-                connectionString = configuration.GetConnectionString("MSSQLConnection");
-                #region "AWS Settings"
-                //if (configuration.GetValue<bool>("IsCloudDeployment"))
-                //{
-                //    var request = new GetParameterRequest()
-                //    {
-                //        Name = configuration.GetConnectionString("CloudSSMConnectionString")
-                //    };
-
-                //    using (var client = new AmazonSimpleSystemsManagementClient(Amazon.RegionEndpoint.GetBySystemName(configuration.GetValue<string>("Region"))))
-                //    {
-                //        var response = client.GetParameterAsync(request).GetAwaiter().GetResult(); ;
-                //        connectionString = response.Parameter.Value;
-                //    }
-                //}
-                #endregion
-
-                NHConfiguration.DataBaseIntegration(c =>
-                {
-                    c.Dialect<MsSql2008Dialect>();
-                    c.ConnectionString = connectionString;
-                    c.KeywordsAutoImport = Hbm2DDLKeyWords.AutoQuote;
-                    c.LogFormattedSql = true;
-                    c.LogSqlInConsole = true;
-                });
-            }
-            else if (configuration.GetValue<string>("DBProvider").ToLower().Equals("postgres"))
+            if (configuration.GetValue<string>("DBProvider").ToLower().Equals("postgres"))
             {
                 connectionString = configuration.GetConnectionString("PostgresConnection");
-                #region "AWS Settings"
-                //if (configuration.GetValue<bool>("IsCloudDeployment"))
-                //{
-                //    var request = new GetParameterRequest()
-                //    {
-                //        Name = configuration.GetConnectionString("CloudSSMConnectionString")
-                //    };
-
-                //    using (var client = new AmazonSimpleSystemsManagementClient(Amazon.RegionEndpoint.GetBySystemName(configuration.GetValue<string>("Region"))))
-                //    {
-                //        var response = client.GetParameterAsync(request).GetAwaiter().GetResult();
-                //        connectionString = response.Parameter.Value;
-                //    }
-                //}
-                #endregion
                 NHConfiguration.DataBaseIntegration(c =>
                 {
                     c.Dialect<PostgreSQL82Dialect>();
@@ -98,6 +55,8 @@ namespace NexGenScreening.Infrastructure.Persistence
             //services.AddTransient<IEmailTemplateRepositoryAsync, EmailTemplateRepositoryAsync>();
             //services.AddTransient<IEmailRecipientRepositoryAsync, EmailRecipientRepositoryAsync>();
 
+            services.AddTransient<IMyTestRepositoryAsync, MyTestRepositoryAsync>();
+            services.AddTransient<IHealthcareCenterRepositoryAsync, HealthcareCenterRepositoryAsync>();
             #endregion Repositories
         }
     }

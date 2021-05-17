@@ -1,3 +1,9 @@
+C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\NexGenScreening.WebApi.csprojAssemblyReference.cache
+C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\NexGenScreening.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\NexGenScreening.WebApi.AssemblyInfoInputs.cache
+C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\NexGenScreening.WebApi.AssemblyInfo.cs
+C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\NexGenScreening.WebApi.csproj.CoreCompileInputs.cache
+C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\NexGenScreening.WebApi.MvcApplicationPartsAssemblyInfo.cache
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\bin\Debug\net5.0\appsettings.Development.json
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\bin\Debug\net5.0\appsettings.json
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\bin\Debug\net5.0\NexGenScreening.WebApi.exe
@@ -7,6 +13,7 @@ C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\bin\De
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\bin\Debug\net5.0\NexGenScreening.WebApi.dll
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\bin\Debug\net5.0\ref\NexGenScreening.WebApi.dll
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\bin\Debug\net5.0\NexGenScreening.WebApi.pdb
+C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\bin\Debug\net5.0\NexGenScreening.WebApi.xml
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\bin\Debug\net5.0\Antlr3.Runtime.dll
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\bin\Debug\net5.0\AutoMapper.dll
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
@@ -66,13 +73,6 @@ C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\bin\De
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\bin\Debug\net5.0\NexGenScreening.Infrastructure.Shared.pdb
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\bin\Debug\net5.0\NexGenScreening.Application.pdb
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\bin\Debug\net5.0\NexGenScreening.Domain.pdb
-C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\NexGenScreening.WebApi.csprojAssemblyReference.cache
-C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\NexGenScreening.WebApi.GeneratedMSBuildEditorConfig.editorconfig
-C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\NexGenScreening.WebApi.AssemblyInfoInputs.cache
-C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\NexGenScreening.WebApi.AssemblyInfo.cs
-C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\NexGenScreening.WebApi.csproj.CoreCompileInputs.cache
-C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\NexGenScreening.WebApi.MvcApplicationPartsAssemblyInfo.cs
-C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\NexGenScreening.WebApi.MvcApplicationPartsAssemblyInfo.cache
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\staticwebassets\NexGenScreening.WebApi.StaticWebAssets.Manifest.cache
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\staticwebassets\NexGenScreening.WebApi.StaticWebAssets.xml
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\scopedcss\bundle\NexGenScreening.WebApi.styles.css
@@ -82,4 +82,4 @@ C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\De
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\ref\NexGenScreening.WebApi.dll
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\NexGenScreening.WebApi.pdb
 C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\NexGenScreening.WebApi.genruntimeconfig.cache
-C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\bin\Debug\net5.0\NexGenScreening.WebApi.xml
+C:\WorkSpace\Cervical Cancer Prevention Programme\NexGen.Screening.WebApi\obj\Debug\net5.0\NexGenScreening.WebApi.MvcApplicationPartsAssemblyInfo.cs

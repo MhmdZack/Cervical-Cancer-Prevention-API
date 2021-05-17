@@ -38,7 +38,7 @@ namespace NexGenScreening.Application.Features.Users.Commands
             user.FirstName = request.FirstName;
             user.LastName = request.LastName;
             user.UserEmail = request.UserEmail;
-            user.UpdatedBy = request.UpdatedBy;
+            //user.UpdatedBy = request.UpdatedBy;
             user.UpdatedDate = DateTime.UtcNow;
             user.UserStatuses = (await _userStatusRepository.FindByCondition(x => x.UserStatusId == request.UserStatus).ConfigureAwait(false)).AsQueryable().FirstOrDefault();
 

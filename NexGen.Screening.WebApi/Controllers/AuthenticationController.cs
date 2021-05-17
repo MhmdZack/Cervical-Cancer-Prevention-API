@@ -4,7 +4,7 @@ using NexGenScreening.Application.DTOs.Authentication;
 using NexGenScreening.Application.Interfaces.Services;
 using System.Threading.Tasks;
 
-namespace NexGen.Screening.WebApi.Controllers
+namespace NexGenScreening.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

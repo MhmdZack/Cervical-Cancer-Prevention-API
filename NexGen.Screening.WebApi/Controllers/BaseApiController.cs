@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace NexGen.Screening.WebApi.Controllers
+namespace NexGenScreening.WebApi.Controllers
 {
     [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]

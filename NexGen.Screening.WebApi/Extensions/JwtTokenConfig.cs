@@ -9,7 +9,7 @@ using NexGenScreening.Domain;
 using System;
 using System.Text;
 
-namespace NexGen.Screening.WebApi.Extensions
+namespace NexGenScreening.WebApi.Extensions
 {
     public static class JwtTokenConfig
     {

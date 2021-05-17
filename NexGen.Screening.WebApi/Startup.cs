@@ -5,8 +5,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using NexGen.Screening.WebApi.Extensions;
-using NexGen.Screening.WebApi.Middlewares;
+using NexGenScreening.WebApi.Extensions;
+using NexGenScreening.WebApi.Middlewares;
 using NexGenScreening.Application;
 using NexGenScreening.Infrastructure.Persistence;
 using NexGenScreening.Infrastructure.Shared;
@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NexGen.Screening.WebApi
+namespace NexGenScreening.WebApi
 {
     public class Startup
     {

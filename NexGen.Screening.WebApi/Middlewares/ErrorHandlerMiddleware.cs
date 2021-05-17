@@ -8,7 +8,7 @@ using System.Net;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace NexGen.Screening.WebApi.Middlewares
+namespace NexGenScreening.WebApi.Middlewares
 {
     public class ErrorHandlerMiddleware
     {

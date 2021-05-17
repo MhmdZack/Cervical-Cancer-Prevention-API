@@ -5,7 +5,7 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Reflection;
 
-namespace NexGen.Screening.WebApi.Extensions
+namespace NexGenScreening.WebApi.Extensions
 {
     public static class SwaggerConfig
     {
