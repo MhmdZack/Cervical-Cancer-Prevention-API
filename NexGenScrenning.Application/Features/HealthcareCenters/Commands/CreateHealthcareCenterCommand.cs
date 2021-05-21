@@ -7,11 +7,11 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace NexGenScreening.Application.Features.HealthcareCenters.Commands
+namespace NexGenScreening.Application.Features.Commands
 {
-    public partial class CreateHealthcareCenterCommand : IRequest<Response<Guid>>
+    public partial class CreateHealthcareCenterCommand : IRequest<Response<int>>
     {
-        //public Int64 HccId { get; set; }
+        //public int HccId { get; set; }
         public string HccCode { get; set; }
         public string HccName { get; set; }
         public string CAddressLine1 { get; set; }
@@ -29,11 +29,13 @@ namespace NexGenScreening.Application.Features.HealthcareCenters.Commands
         public string PPostalCode { get; set; }
         public string EmailAddress { get; set; }
         public string WebsiteUrl { get; set; }
-        public bool IsActive { get; set; }
+        public int IsActive { get; set; }
+        public long CreatedBy { get; set; }
+        public long ClientId { get; set; }
         public DateTime CreatedDate { get; set; }
     }
 
-    public class CreateHccCommandHandler : IRequestHandler<CreateHealthcareCenterCommand, Response<Guid>>
+    public class CreateHccCommandHandler : IRequestHandler<CreateHealthcareCenterCommand, Response<int>>
     {
         private readonly IHealthcareCenterRepositoryAsync _hccRepository;
         private readonly IMapper _mapper;
@@ -43,13 +45,14 @@ namespace NexGenScreening.Application.Features.HealthcareCenters.Commands
             _hccRepository = hccRepository;
             _mapper = mapper;
         }
-        public async Task<Response<Guid>> Handle(CreateHealthcareCenterCommand request, CancellationToken cancellationToken)
+
+        public async Task<Response<int>> Handle(CreateHealthcareCenterCommand request, CancellationToken cancellationToken)
         {
             var hcc = _mapper.Map<HealthcareCenter>(request);
             hcc.CreatedDate = DateTime.UtcNow;
-            
+
             var hccObject = await _hccRepository.AddAsync(hcc).ConfigureAwait(false);
-            return new Response<Guid>(Convert.ToString(hccObject.HccId));
+            return new Response<int>(hccObject.HccId);
         }
     }
 }

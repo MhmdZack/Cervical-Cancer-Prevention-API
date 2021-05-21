@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NexGenScreening.Application.DTOs.User
+namespace NexGenScreening.Application.DTOs
 {
     public class UserViewModel
     {

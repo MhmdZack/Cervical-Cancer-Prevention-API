@@ -55,8 +55,8 @@ namespace NexGenScreening.Infrastructure.Persistence
             //services.AddTransient<IEmailTemplateRepositoryAsync, EmailTemplateRepositoryAsync>();
             //services.AddTransient<IEmailRecipientRepositoryAsync, EmailRecipientRepositoryAsync>();
 
-            services.AddTransient<IMyTestRepositoryAsync, MyTestRepositoryAsync>();
             services.AddTransient<IHealthcareCenterRepositoryAsync, HealthcareCenterRepositoryAsync>();
+            services.AddTransient<IGynaecologyCenterRepositoryAsync, GynaecologyCenterRepositoryAsync>();
             #endregion Repositories
         }
     }

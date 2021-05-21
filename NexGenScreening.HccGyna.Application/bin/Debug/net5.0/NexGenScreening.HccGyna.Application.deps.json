@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "NexGenScreening.HccGyna.Application/1.0.0": {
+        "dependencies": {
+          "NexGenScreening.HccGyna.Domain": "1.0.0"
+        },
+        "runtime": {
+          "NexGenScreening.HccGyna.Application.dll": {}
+        }
+      },
+      "NexGenScreening.HccGyna.Domain/1.0.0": {
+        "runtime": {
+          "NexGenScreening.HccGyna.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NexGenScreening.HccGyna.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NexGenScreening.HccGyna.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

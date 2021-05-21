@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace NexGenScreening.Application.Features.HealthcareCenters.Commands
+namespace NexGenScreening.Application.Features.Commands
 {
     public class CreateHealthcareCenterCommandValidator : AbstractValidator<CreateHealthcareCenterCommand>
     {
@@ -49,12 +49,19 @@ namespace NexGenScreening.Application.Features.HealthcareCenters.Commands
                 .NotNull()
                 .MaximumLength(10).WithMessage("{PropertyName} must not exceed 50 characters.");
 
+            RuleFor(p => p.CreatedBy)
+                .NotEmpty().WithMessage("{PropertyName} is Required")
+                .NotNull();
+
+            RuleFor(p => p.ClientId)
+                .NotEmpty().WithMessage("{PropertyName} is Required")
+                .NotNull();
         }
 
-        private async Task<bool> IsUniqueHccName(string Name, CancellationToken cancellationToken)
+        private async Task<bool> IsUniqueHccName(string hccName, CancellationToken cancellationToken)
         {
             var HccObject = (await hccRepository
-                .FindByCondition(x => x.HccCode.ToLower() == Name.ToLower())
+                .FindByCondition(x => x.HccName.ToLower() == hccName.ToLower())
                 .ConfigureAwait(false))
                 .AsQueryable()
                 .FirstOrDefault();

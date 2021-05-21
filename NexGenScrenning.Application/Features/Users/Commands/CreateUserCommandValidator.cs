@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace NexGenScreening.Application.Features.Users.Commands
+namespace NexGenScreening.Application.Features.Commands
 {
     public class CreateUserCommandValidator : AbstractValidator<CreateUserCommand>
     {

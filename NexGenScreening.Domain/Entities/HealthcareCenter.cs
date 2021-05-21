@@ -9,7 +9,7 @@ namespace NexGenScreening.Domain
 
     public class HealthcareCenter : AuditableBaseEntity
     {
-        public virtual Int64 HccId { get; set; }
+        public virtual int HccId { get; set; }
         public virtual string HccCode { get; set; }
         public virtual string HccName { get; set; }
         public virtual string CAddressLine1 { get; set; }
@@ -27,6 +27,6 @@ namespace NexGenScreening.Domain
         public virtual string PPostalCode { get; set; }
         public virtual string EmailAddress { get; set; }
         public virtual string WebsiteUrl { get; set; }
-        public virtual bool IsActive { get; set; }
+        public virtual int IsActive { get; set; }
     }
 }

@@ -17,9 +17,4 @@
     <ProjectReference Include="..\NexGenScreening.Domain\NexGenScreening.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\HealthcareCenters\Queries\" />
-    <Folder Include="Features\Sample\Queries\" />
-  </ItemGroup>
-
 </Project>

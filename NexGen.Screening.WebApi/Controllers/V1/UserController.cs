@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using NexGenScreening.Application.Features.Users.Commands;
-using NexGenScreening.Application.Features.Users.Queries;
+using NexGenScreening.Application.Features.Commands;
+using NexGenScreening.Application.Features.Queries;
 using System.Threading.Tasks;
 
 namespace NexGenScreening.WebApi.Controllers.V1

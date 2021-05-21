@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
-using NexGenScreening.Application.DTOs.User;
+using NexGenScreening.Application.DTOs;
 using NexGenScreening.Application.Interfaces.Repositories;
 using NexGenScreening.Application.Wrappers;
 using System;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace NexGenScreening.Application.Features.Users.Queries
+namespace NexGenScreening.Application.Features.Queries
 {
     public class GetUserByIdQuery : IRequest<Response<UserViewModel>>
     {

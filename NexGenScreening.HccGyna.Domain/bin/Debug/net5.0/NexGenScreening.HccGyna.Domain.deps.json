@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "NexGenScreening.HccGyna.Domain/1.0.0": {
+        "runtime": {
+          "NexGenScreening.HccGyna.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NexGenScreening.HccGyna.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -21,8 +21,8 @@ namespace NexGenScreening.WebApi.Extensions
                 s.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "Clean Architecture Application",
-                    Description = "Clean Architecture Application Web API",
+                    Title = "Cervical Cancer Prevention Programme",
+                    Description = "Cervical Cancer Prevention Programme Web API",
                 });
                 s.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {

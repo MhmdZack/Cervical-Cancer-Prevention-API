@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace NexGenScreening.Application.Features.Users.Queries
+namespace NexGenScreening.Application.Features.Queries
 {
     public class GetUserByIdQueryValidator : AbstractValidator<GetUserByIdQuery>
     {

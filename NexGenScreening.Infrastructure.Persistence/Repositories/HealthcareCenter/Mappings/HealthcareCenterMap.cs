@@ -1,5 +1,6 @@
 ﻿using NHibernate.Mapping.ByCode;
 using NHibernate.Mapping.ByCode.Conformist;
+using NHibernate.Type;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,21 +14,18 @@ namespace NexGenScreening.Infrastructure.Persistence.Repositories
         public HealthcareCenterMap()
         {
             //Schema("public");
+            //string table = @"""Hcc""";
             Table("Hcc");
             Lazy(true);
-            //Id(x => x.HccId, map =>
-            //{
-            //    map.Generator(Generators.Sequence, gmap => gmap.Params(new { Name = "sequence", sequence = "Hcc_HccId_seq" }));
-            //    map.Column("HccId");
-            //    map.UnsavedValue(0);
-            //});
+
             Id(x => x.HccId, map =>
             {
-                map.Generator(Generators.Sequence);
+                map.Generator(Generators.Increment);
                 map.Column("HccId");
                 map.UnsavedValue(0);
             });
 
+            //Id(x => x.HccId, map => map.Generator(Generators.Increment));
             Property(x => x.HccCode, map => { map.NotNullable(true); map.Length(10); });
             Property(x => x.HccName, map => { map.NotNullable(true); map.Length(100); });
             Property(x => x.CAddressLine1, map => { map.NotNullable(true); map.Length(50); });
@@ -45,8 +43,8 @@ namespace NexGenScreening.Infrastructure.Persistence.Repositories
             Property(x => x.PPostalCode, map => { map.Length(10); });
             Property(x => x.EmailAddress, map => { map.Length(50); });
             Property(x => x.WebsiteUrl, map => { map.Length(50); });
-            Property(x => x.IsActive);
-            Property(x => x.ClientId);
+            Property(x => x.IsActive, map => { map.NotNullable(true); });
+            Property(x => x.ClientId, map => { map.NotNullable(true); });
             Property(x => x.CreatedBy, map => { map.Length(10); });
             Property(x => x.CreatedDate);
             Property(x => x.UpdatedBy, map => { map.Length(10); });
